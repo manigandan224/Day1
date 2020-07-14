@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference between let var and const</title>
+</head>
+<body>
+    <h2>Difference between let var and const</h2>
+        <h3>Var</h3>
+    <ul><li><p>The scope of a variable defined with the keyword <strong>"var"</strong>is limited to the <strong>"function"</strong> within which it is defined. <br>If it 
+            is defined outside any function, the scope of the variable is global.<br> <strong>var is <em>"function scoped"</em></strong></p></li></ul>
+        <h3>Let</h3>
+        <ul><li>The scope of a variable defined with the keyword <strong>"let"</strong> or <strong>"const"</strong> is limited to the <strong>"block"</strong> defined by curly braces i.e. {}.<br><strong>
+          <em>"let"</em> and <em>"const"</em> are <em>"block scoped".</em>  </strong></li>
+        </ul>
+    <h3>Const</h3>
+    <ul><li>The scope of a variable defined with the keyword <strong>"const"</strong> is limited to the block defined by curly braces.<br>
+    However if a variable is defined with keyword const, it cannot be reassigned. <br><strong><em>"const"</em> cannot be re-assigned to a new value.</strong></li></ul>
+   <script type="text/javascript">
+   document.write("<h3>var let and const example</h3>")
+   var a=5;
+   {
+       let a=6;
+       document.write("let example:"+a);
+   }
+   document.write("<br>")
+   document.write("var example:"+a);
+   const name="mani";
+   name="priya"; //error
+   document.write(name);
+ </script>     
+</body>
